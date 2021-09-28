@@ -24,7 +24,7 @@ export const Row = styled.div`
   flex-direction: row;
 `;
 
-export const PieceStyled = styled.div`
+export const Col = styled.div`
   display: flex;
   flex: calc(100/70);
   flex-direction: column;
@@ -33,7 +33,7 @@ export const PieceStyled = styled.div`
   place-items: center;
 `;
 
-export const CircleStyled = styled.div<{ color: string }>`
+export const PieceStyled = styled.div<{ color: string }>`
   height:80%;
   width:80%;
   background-color: ${(props) => props.color};

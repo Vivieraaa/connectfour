@@ -1,5 +1,5 @@
 import React from "react";
-import { PieceStyled, CircleStyled } from "./App.styled";
+import { PieceStyled } from "./App.styled";
 
 type SquareProps = {
   piece: any;
@@ -8,12 +8,10 @@ type SquareProps = {
 
 const BoardPiece = ({ piece, choosePiece }: SquareProps) => {
   return (
-    <PieceStyled>
-      <CircleStyled
-        onClick={choosePiece}
-        color={piece === 1 ? "#615eff" : piece === 2 ? "#ff5e5e" : "#d1d1d1"}
-      ></CircleStyled>
-    </PieceStyled>
+    <PieceStyled
+      onClick={choosePiece}
+      color={piece === 1 ? "#615eff" : piece === 2 ? "#ff5e5e" : "#d1d1d1"}
+    ></PieceStyled>
   );
 };
 
